@@ -18,6 +18,8 @@ to use additional packages, you must clearly explain the reason in your report.
 # trajectory_generator.py
 import numpy as np
 from scipy.interpolate import CubicSpline
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 class TrajectoryGenerator:
@@ -83,4 +85,4 @@ class TrajectoryGenerator:
         ax3.set_xlabel('Time (s)')
         ax3.grid(True)
 
-        plt.show()
+        # plt.show()

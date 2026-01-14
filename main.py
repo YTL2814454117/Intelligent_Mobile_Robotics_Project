@@ -2,6 +2,7 @@ from flight_environment import FlightEnvironment
 from path_planner import AStarPlanner
 from trajectory_generator import TrajectoryGenerator
 import numpy as np
+import matplotlib.pyplot as plt
 env = FlightEnvironment(50)
 start = (1,2,0)
 goal = (18,18,3)
@@ -51,7 +52,7 @@ t_dense, x_traj, y_traj, z_traj, orig_times, orig_path = traj_gen.generate(path)
 
 # 2) 绘制轨迹曲线 (X-t, Y-t, Z-t)
 traj_gen.plot_trajectory(t_dense, x_traj, y_traj, z_traj, orig_times, orig_path)
-
+plt.show()
 
 # --------------------------------------------------------------------------------------------------- #
 
